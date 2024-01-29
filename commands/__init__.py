@@ -4,11 +4,15 @@
 # If you want to add an additional command, duplicate one of the existing directories and import it here.
 # You need to use aliases (import "entry" as "my_module") assuming you have the default module named "entry".
 from .commandDialog import entry as commandDialog
+from .addRadsToSketch import entry as addRadsToSketch
+from .rotateCommand import entry as rotateCommand
 
 # TODO add your imported modules to this list.
 # Fusion will automatically call the start() and stop() functions.
 commands = [
-    commandDialog
+    commandDialog,
+    addRadsToSketch,
+    rotateCommand
 ]
 
 
